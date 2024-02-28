@@ -16,7 +16,7 @@ RUN go mod download
 COPY . .
 
 # アプリケーションのビルド
-RUN go build -o main .
+RUN go build -buildvcs=false -o main .
 
 # アプリケーションの実行
 CMD ["./main"]

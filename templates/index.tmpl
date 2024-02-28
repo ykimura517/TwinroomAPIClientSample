@@ -14,6 +14,24 @@
     <p>{{ .query }}</p>
     <h2>AI Response</h2>
     <p>{{ .msg }}</p>
+
+
+    <h2>Data Form</h2>
+    <form action="/stream" method="GET">
+        <div>
+            <label for="session_id">Session ID:</label>
+            <input type="text" id="session_id" name="session_id">
+        </div>
+        <div>
+            <label for="user_id">User ID:</label>
+            <input type="text" id="user_id" name="user_id">
+        </div>
+        <div>
+            <label for="query">query:</label>
+            <input type="text" id="query" name="query">
+        </div>
+        <button type="submit">Send</button>
+    </form>
 </body>
 
 </html>
